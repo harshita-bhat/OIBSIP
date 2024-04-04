@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c1d4c8f89c.js" crossorigin="anonymous"></script>
+  <!-- Box icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <title>Harshita Bhat | Front-End Developer</title>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="img/Logo.png" alt="" id="logo-img">
+      <a href="#" id="logo-text">Portfolio</a>
+    </div>
+
+    <ul>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#portfolio">PORTFOLIO</a></li>
+      <li><a href="#services">SERVICES</a></li>
+      <li><a href="#contact">CONTACT ME</a></li>
+    </ul>
+
+    <div id="Mode">
+      <div id="switch"></div>
+      <label id="inner-text">Dark</label>
+    </div>
+  </nav>
+
+  <div class="main">
+
+    <div class="left-column">
+      <div class="img-box">
+        <img src="img/Pattern.png" alt="" class="img-back">
+        <img src="img/Portrait.png" alt="" class="img-main">
+      </div>
+
+    </div>
+
+    <div class="right-column">
+      <div class="content">
+        <h1>HI. I'M <span>Harshita Bhat</span> </h1>
+        <p>A <span>Front-End Web Developer</span> passionate about creating interactive applications and experiences on
+          the web.</p>
+
+        <button>Contact Me</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about">
+      <h2>About Me</h2><br>
+      <p>I am a passionate Front-End Web Developer with a strong foundation in HTML, CSS, and JavaScript. I am
+        enthusiastic and motivated, with a keen interest in coding and problem-solving.</p>
+      <br>
+      <h3>Key Qualities:</h3>
+      <br>
+      <ol>
+        <li>Enthusiastic and motivated web development fresher.</li>
+        <li>Strong passion for coding and problem-solving.</li>
+        <li>Proficient in Python, JavaScript, HTML5, and CSS3.</li>
+        <li>Skilled in creating responsive and user-friendly web applications.</li>
+        <li>Excellent teamwork and communication skills.</li>
+        <li>Proven ability to collaborate effectively in a fast-paced environment.</li>
+        <li>Eager to contribute to innovative web projects and make a positive impact.</li>
+        <li>Committed to continuous learning and expanding skillset.</li>
+      </ol>
+    </div>
+  </section>
+  </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="portfolio">
+      <h2>Portfolio</h2>
+
+      <!-- Project 1 -->
+      <div class="project"><br>
+        <h3>Project 1: React News Application Using Alan AI</h3>
+        <p>an innovative Artificial Intelligence React
+          News Application using Alan AI, a speech recognition
+          software. Enabled voice-controlled capabilities, allowing
+          users to navigate and interact with the application solely
+          through voice commands in a hands-free manne</p>
+        <a href="#" class="btn">View Details</a>
+      </div><br>
+
+      <!-- Project 2 -->
+      <div class="project">
+        <h3>Project 2: E-commerce Website</h3>
+        <p>An e-commerce website developed using HTML, Javascript and styled with CSS. Includes features such as product
+          browsing, and cart management.</p>
+        <a href="#" class="btn">View Details</a>
+      </div><br>
+
+      <!-- Project 3 -->
+      <div class="project">
+        <h3>Project 3: Portfolio Website</h3>
+        <p>A personal portfolio website showcasing skills, projects, and contact information. Built with HTML, CSS for
+          interactivity.</p>
+        <a href="#" class="btn">View Details</a>
+      </div>
+
+      <div class="project">
+        <h3>Project 4: Hotstar Static Clone</h3>
+        <p>A static clone of the Hotstar website, focusing solely on its frontend design and features.</p>
+        <a href="#" class="btn">View Details</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="services">
+      <h2>Services</h2>
+      <ul>
+        <li>Front-End Development</li>
+        <li>Responsive Design</li>
+        <li>UI/UX Design</li>
+        <!-- Add more services as needed -->
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact">
+      <h2>Contact Me</h2>
+      <p>Feel free to get in touch with me. You can reach out via the form below or connect with me on social media.</p>
+      <div class="social-link">
+        <a href="https://www.linkedin.com/in/harshita-bhat-498a05240/"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const Mode = document.getElementById('Mode');
+    const Switch_Mode = document.getElementById('switch');
+    const Inner_text = document.getElementById('inner-text');
+    Mode.onclick = function () {
+      document.body.classList.toggle('dark-mode');
+      Switch_Mode.classList.toggle('switch-active');
+      Inner_text.classList.toggle('Inner-text-active');
+      if (document.body.classList.contains('dark-mode')) {
+        Inner_text.innerHTML = 'Light';
+      }
+      else {
+        Inner_text.innerHTML = 'Dark';
+      }
+    }
+  </script>
+</body>
+
+</html>
